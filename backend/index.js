@@ -3,7 +3,7 @@ const fs = require('fs')
 const cors  = require('cors')
 const morgan = require('morgan')
 const { config } = require('process')
-config('dotenv')
+require('dotenv').config
 
 const app = express()
 app.use(morgan('dev'))
